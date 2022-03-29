@@ -10,13 +10,13 @@ async function createUser(req, res) {
   }
   console.log(user.email)
   if (user.email) {
-    req.session.messages = { success: registerSuccessMessage };
+    // req.session.messages = { success: registerSuccessMessage };
     res.redirect('/login');
   }
   const { code } = user;
   const databaseError =
     code === '23505' ? 'The email has already been taken.' : 'Something went wrong.';
-  req.session.messages = { databaseError };
+  // req.session.messages = { databaseError };
   res.redirect('/register');
 }
 
