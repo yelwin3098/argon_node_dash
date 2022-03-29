@@ -1,6 +1,6 @@
 # [Argon Dashboard Nodejs](https://argon-dashboard-nodejs.creative-tim.com/?ref=adn-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Dashboard%20Node.js%20is%20a%20Free%20Frontend%20Preset%20for%20Node.js%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//argon-dashboard-nodejs.creative-tim.com/%20%23bootstrap%20%23argon%20%23design%20%23dashboard%20%23nodejs%20%23freebie%20%20via%20%40CreativeTim)
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-nodejs.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-nodejs/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-nodejs.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-nodejs/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-nodejs.svg?maxAge=2592000)](https://github.com/yelwin3098/argon_node_dash/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-nodejs.svg?maxAge=2592000)](https://github.com/yelwin3098/argon_node_dash/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/148/original/opt_ad_node_thumbnail.jpg)
 
@@ -26,7 +26,7 @@ View example pages [here](https://argon-dashboard-nodejs.creative-tim.com/?ref=a
 ## Installation
 
 1. You need `Node.js` (at least 10.x version) installed on your machine, if you don't have it, you should install it - download [link](https://nodejs.org/en/download/)
-2. [Clone the project from github](https://github.com/creativetimofficial/argon-dashboard-nodejs) or [download the archive](https://github.com/creativetimofficial/argon-dashboard-nodejs)
+2. [Clone the project from github](https://github.com/yelwin3098/argon_node_dash) or [download the archive](https://github.com/yelwin3098/argon_node_dash)
 3. `cd` to your downloaded Argon app
 4. Install necessary dependencies:
     - **Via node `npm` package manager** - Run `npm install` on the project root
@@ -49,18 +49,13 @@ View example pages [here](https://argon-dashboard-nodejs.creative-tim.com/?ref=a
 3. Change connection configuration, from your root `cd` to `env-files` folder and change the following configurations with your own:
 
 ###### **For PostgreSQL connection:**
-1. Database connection via URL
-```bash
-DATABASE_URL=http://creativeTim:creativeTim@127.0.0.1:5432/creativeTim
-# Example: DATABASE_URL=http://<user>:<password>@<host>/<database_name>
-```
-2. Database connection via credentials
+1. Database connection via URL Database connection via credentials
 ```bash
 DATABASE_HOST=127.0.0.1
 DATABASE_PORT=5432
-DATABASE_NAME=creativeTim
-DATABASE_USER=creativeTim
-DATABASE_PASSWORD=creativeTim
+DATABASE_NAME=argon_node
+DATABASE_USER=root
+DATABASE_PASSWORD=
 ```
 
 ######  **For Redis connection:**
@@ -76,24 +71,12 @@ REDIS_PORT=6379
 REDIS_PASSWORD=
 ```
 
-## Migrations and seeds
-
-1. For database tables structure, in the project root run: `npm run knex migrate:latest` or `yarn knex migrate:latest` if you are using `yarn` as the default package manager
-2. To create a default user, run: `npm run knex seed:run` or `yarn knex seed:run` if you are using `yarn` as the default package manager
-
 ## Run the application
 
 1. For starting the application, the following script (defined in `package.json` under `scripts`) must be called:
     - via **npm**: `npm run start` or `npm run dev` for starting the development environment, which has livereload enabled;
     - via **yarn**: `yarn start` or `yarn dev` for starting the development environment, which has livereload enabled;
 
-
-## Usage
-
-Register a user or login using **admin@argon.com**:**secret** and start testing the preset (make sure to run the migrations and seeds for these credentials to be available).
-
-Besides the dashboard and the auth pages this preset also has an edit profile page.
-**NOTE**: _Keep in mind that all available features can be viewed once you login using the credentials provided above or by registering your own user._
 
 ## Features
 
@@ -306,7 +289,7 @@ At present, we officially aim to support the last two versions of the following 
 - Documentation: <https://argon-dashboard-nodejs.creative-tim.com/docs/getting-started/overview.html?ref=adn-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard-nodejs/issues)
+- Issues: [Github Issues Page](https://github.com/yelwin3098/argon_node_dash/issues)
 - **Dashboards:**
 
 | HTML | NODEJS |
@@ -338,7 +321,7 @@ We use GitHub Issues as the official bug tracker for the Material Kit. Here are 
 
 - Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=adn-readme)
 
-- Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-nodejs/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/yelwin3098/argon_node_dash/blob/master/LICENSE.md)
 
 ## Useful Links
 
