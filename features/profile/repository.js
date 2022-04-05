@@ -8,14 +8,16 @@ async function getUser(id) {
 }
 
 async function updateUserInfo({ name, username: email, id }) {
-  const [user] = await knex('users')
+  const updateUser = await knex('users')
     .where({ id })
     .update({
       name,
       email,
       updated_at: new Date(),
     })
-    .returning(['email', 'name']);
+  const users=await knex.select("*").from('users').where('id', id);
+  // const user=[users[0].name,users[0].email]
+  const user={name:users[0].name,email:users[0].email}
   return user;
 }
 
